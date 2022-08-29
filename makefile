@@ -2,6 +2,7 @@ CC = clang++ $(CCFLAGS)
 
 CCFLAGS  = -std=gnu++2b -O2
 CCFLAGS += -g -Wall
+CCFLAGS += -Wextra -Wpedantic -Wno-c99-extensions
 CCFLAGS += -Wno-unused-parameter
 CCFLAGS += $(LDFLAGS)
 
