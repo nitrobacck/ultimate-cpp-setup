@@ -1,3 +1,7 @@
+# print arbitrary variables with $ make print-<name>
+print-%  : ; @echo $* = $($*)
+
+# compiler collection = clang compiler
 CC = clang++ $(CCFLAGS)
 
 CCFLAGS  = -std=gnu++2b -O2
