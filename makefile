@@ -22,3 +22,8 @@ build:
 
 run:
 	$(APP)
+
+clean:
+	rm -r -f *.o
+	rm -r -f bin/debug/*.exe
+	rm -r -f $(APP)
